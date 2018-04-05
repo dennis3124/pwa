@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>NgPwa</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#008080"><link href="styles.7103e6007ab4b0c2772b.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script>// registration of service worker
+
+    // check if service worker API is available in browser
+    if('serviceWorker' in navigator) {
+      // register your service worker file.
+      navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => console.log('S/W registered'))
+      .catch(err => console.log('S/W registration failed'))
+    }</script><script type="text/javascript" src="inline.4344be24c3f87dbf1fa7.bundle.js"></script><script type="text/javascript" src="polyfills.900aaf0d520c2ec873a7.bundle.js"></script><script type="text/javascript" src="vendor.bebf9bc952226e866278.bundle.js"></script><script type="text/javascript" src="main.c7aae627c503da0f0916.bundle.js"></script></body></html>
